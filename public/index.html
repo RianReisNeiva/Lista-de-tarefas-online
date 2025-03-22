@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>To do</title>
+    </head>
+    <body>
+        <section class="register" id="register">
+            <form id="forme-login" class="forme">
+                <h1>Login</h1>
+                <input id="email-login" type="email" placeholder="seu email" />
+                <input
+                    id="senha-login"
+                    type="password"
+                    placeholder="sua senha"
+                />
+                <button id="button-login">Sign in</button>
+                <span id="message-login"></span>
+                <a onclick="loginOrCadastro()">Ainda não tenho conta</a>
+            </form>
+
+            <form id="forme-cadastro" class="forme">
+                <h1>Cadastro</h1>
+                <input
+                    id="nome-cadastro"
+                    type="text"
+                    placeholder="seu nome"
+                    required
+                />
+                <input
+                    id="email-cadastro"
+                    type="email"
+                    placeholder="seu email"
+                    required
+                />
+                <input
+                    id="senha-cadastro"
+                    type="password"
+                    placeholder="sua senha"
+                    required
+                />
+                <button>Register</button>
+                <span id="message-cadastro"></span>
+                <a onclick="loginOrCadastro()">Já tenho conta</a>
+            </form>
+        </section>
+
+        <section id="deash">
+            <header>
+                <h1>ToDo</h1>
+                <b><p id="nome-print">Nome do usuario</p></b>
+                <button id="button-float" onclick="createVisi()">➕</button>
+            </header>
+
+            <div class="tasks" id="tasks">
+                <p id="message-text">O usuário ainda não possui tarefas</p>
+            </div>
+
+            <div class="create" id="create">
+                <div id="card-ceate">
+                    <h2>Nova tarefa</h2>
+                    <input
+                        type="text"
+                        id="content-create"
+                        placeholder="Título da tarefa..."
+                    />
+                    <div class="buttons">
+                        <button id="create-task">Criar</button>
+                        <button id="cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
